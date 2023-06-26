@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cntt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cntt.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+             <a href="main.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAABUFBMVEX/////zAbuHCX/0QD/zwAALIYAI3oPMoXg4uyor8YILHyfilHbtioALIjTryyPf1sAJnvu8PP/1ADvJyPtACb6qAzwPx//1gAAJorsACTsACn/0jvvHCT/2gD3iBbiuSdnZGwAI4ltaWb4rRH4ohLPrDUAIIwAKYgAI4i9nkDzxRMWNoL1ygR6dWP7uA/yTyD8ww3xYB3ycxz4uxCSg1bGpjvnviL2fxkjPn4AGo0wRHywlkt4cWY7SHpTV3PJztpUY5c0SoqAdmDT2OJ0gamgqsO4wNKeiFX0khjyOSDyWB7wby37yDvwYC72bhv3nTPzhzPvTC75qjb7xjz62jzzay/5uTj1gzLygxpBTW+xnEdLXHLaGTK+oj3rNinYWTPYfC5FV3K8TkLNETvrrBqejUleYW4AAIvJWTpZZmeBW2FobGQAAJUXOH6CfF5FS32EU0iNAAATxElEQVR4nO2d62PaxpbAI2ZkWoMhGWTEKGCegiDJPIwRYB5N2faC3Vu3vTfba8glu9ld8N5Ncf//bzsjgc1DAuGAJRKfxDYPMWJ+OnPmzJkzoxcvnuVZnuVZnuVZnuVZnuVZPlNeffets+Uv3+yYwHdvD14eOltevvz+2x0SePX2wC27WfbIwcKybvmw+m87QzAmAGJ10edkEQdtt1s++MuOGHwvu3tRBKDDBSinGflgN5rww6E7BiCzB4I8rDzeBYJvDuTmXhAggtrulz/ugMEPcqa8LwwYRZarO2BQlZtgy9+UNl6AAEJoywUz4M59sH0/4dVLd3ubDEj1EZNLdc+KV/l8EG5Zw+CAPdx+1/DNgbuzLQYQIpDrFi+xgDnsIsJtWxGglz3cvqe0PQYQFVJFFyaVD7smsj8MPFtgAPlCN485Wv17Al8XAwCOrzDHuRbl62GAmJMAXgbwFTFATMVAA74mBgDeCNgVDpsw4LdXfU0cyADyXRc2qf/XwQDyuaBZK/hK2gKEZ8JKAl86A8igXGC1EnzxDBj+xrQ3+EoYQCa/nsCXzQBYaAdfNgOIji0RcLnwF8sAdI36g8BPeJkBDwCN1X5xDAgCI7cI//VnCgEHZgaOgW7xunKSyhUQ2g4IhzAAyeXrrbX9X979hrHrl19n3r685jhBID+BYjcHtxC8dggDBpwYQhB+evf6t19fvwvMKgliCqVk6qR4SVAEro/h59oHpzBgIob2wPXh9et3717/bRaQZhNpgBUUUmcBgXNVCp+nDA5hAFG3mFq2CBj/9JrIu59n38EPYybSEpJnLkEo5j6HgkMYgC7HFY8Xm0P4p7+/owxez9uIuXEjaQndoMAVS49vEc5gAKlvgK8WDSMxBO80CL+HTRnQT/PHeQFXmMeO1h3BAOa0yuN8cl4NMP7w779ojeF3bgUDGn4/DuBA8pGq4AgGTGDS0oMLEMhLLmIRf/393e8PUSXDGApENwI+Q4+yCg5gAFF+2gZwcGnMgP/+7mcO459/E1YyYBhUCgrBwmPagwMYoJsHM4Avc5fzDLi//ZVzzc8vmMTSAKgIrtxjwha2M4CluSsfKM1DwP/4dUEzzOOJfApzKZ5GpfeMAQjOVzFQ+m0uovrbB1fYIgMy/HZxKVQqbqYMtjMgnsGia1TKz/aRS47TqrgyyrkChMP1RppgOwNmOWoQLl09vLg8mlwZWwelY3rIySYQ7GYAzgzGSkKpuCKespIBSnKUm3C8iXtiL4MFg3hfzdy1GYTwyjgSSHETzSlYdxVsZoCKxjXFSSP9oG+Q8fKKkglTHQGXt94a7GVA1cB4Vk1I3ixqAnGdcfD6JJVaVTLMTUafXNe6k2YrA2A+qcQdd+chcK6zFMOjdYFEkJoUiQt7wQAWjBVe14TULAQunwLWYgT8tV6ocGW1NdjKwCSANq12d3pJwzif4y3bODAdgSUtfsRWBihgYg2mEPSAAnalNhoQJnX94YIWFcFOBjC5ZlYF3+TIEVxxw+gIutY7B26l9XQGA0P/aF4TKjmO626YcwGZwkS7LCqCrQzWEKDCJFObR4fApF/FSWuOmn0MwLqmQP3FR86p6eMMrmiJn40MUGVtU7Du58zLvSJYOtpOBsE1CHBx3hJAAAF4eALMJ5imjgfXtaJFNjIorEk8Ci9cReD72Gr5VaATUNut1kg1K3s6Dslbsaf2MaBDvNUt4WS+CLUnASi2/MRCAOZ05ANAbSpm1ZrYGksOs40M1pqDeT0GbR+gQeh+T0XeZpm2A9Afmp1l4ixyKQuNwUYGV2uswc18c0fveYZWCKi9YUvRW4TaMDkLBPqoAZ9ZGbbYxgAG1jSFeTWGx/8s6tcU9dOiXjiUEqZ6kNJ9RStukn0MCmuyUReGfZCMBLWuEgxGoOfTcZjqASl+0jOYWQwnMFg3WBAWujXwAWPi/0PgbUUQ7KmAmEYonpueBenTFMTLci4DkFptEheaAuny/+M/ecmbHb5MNBKN0UV9EFV4TxmYNgY9LCtYMIr2Meiu1oPAQkMGpEMYje76hz5VlVQ126y334+a4smZWcVOtPIXO1hnMaisZIDnXX3AeHrnPYh4zxBoIwjULiMkffwvLFwZu0G6+xHmrp3MYPXAeb5nROVmH/B+EUTfT4uFTQXU+2ec6799hmea2BtsYdhkH4PrlQzm4h+gnoDEHKqxSE+dvgzERqSnFPLB//koGp5q0u9YiLHbx6C4msFsMFBtaaloIOY5f3gVJYZ3gEHEKPaMz6AzuFw/YrCRAcdhzlgwxrN9GqxndbfQm3kILUNGSks6DL/PwPaToaMmi7bVSQyYUi53bCq53Ox3HOiFwfpL9aG2QAx5tWfoNGrU/z2cf13vaOPYGRYEAT9c+jlFmI+kw6akeYg9dfRwVUFTf0acpuVTgRthWqKwVhPsjCcWljIP7nuF+UsH1QsRQabsj7QH9zaxU+dHqjaONHCHZ3veS0czMF3BJyw6iUpjJEZiEgTTiAFUewiIHX7Q8xtNP4GzBwbBdZMTts6xmHpJy14+Uu961bLEe2M8jagB0FN4NVvtnUuG50EPCQx4bWaOrXMs5gwMgqlIbA9jvVGm7fEMh55YddRL1GOSyRzkTKwSnzm5LSDTCAKuGJg5vw8gxCgtT3kgnp4qVBvqWTM1f0jpxGtHDLYyMF/QGlz2bMBIcwcg6SSQSHoEUnvouzM5S+6h5PXhNFvnmUySUFyGEwOgNQ0e9QatSbXMYiizK4PWRxBsZWAeVTW4eBoDMmYsRPq30Unh6ifjs8ym+HDrHRU7bWLKdIbBYEQMRgr1q8Lc//5Lag6Q/uVN2gKYsTTrI4q26kHOPIQgLOWVAU8fQHQi0HUsINFQAITormw4HTkbp7MQWbY3B8N86LgYWadftdf3Dv4vrOXYILHXFqPnMRM1mIlNWJhhsJdB3pSBy2XwXet3HrWk1wkC33m7bza7MNMUuPVfw14GJ+aNgasst+O59a3QNEcLzs7iOTmGop18hUFwcRtkms4LH7xPcwpbmXm2Nz8RrWgLeINM0/kqzS4NWwzRO4/B7PBuWRE2Sj5/kNm8BkuZKDbn6q6abAoL1tKJFhHMWgPOSo6i3TnbqyZew+HS5iYBMrNFrI2fOIHByiQES9kDiyXOxuwXJy0dyQCax9PCLvyIRZvz05gWgsr2M2DQlbkipB6xkHt2Rj+MremR3QwYUxchkHTl14bFF2V+kdwe5KlqwucN87bDBIELBzfJVIYFAOe0ylKn4AQG0HAXEA1BmPyxvm6VjEKL6HKmsPWBRKcwYPjl3Kyw63LiOISFrjWzprkF3BUKcveRxIDVhmQ/A4OlbTiYvI+uCFdW1nFDvkI7GCH/sH6cs+xh2c+AQYuZCFw+ORNgwlzXNOFmKkDKCxN6aLI+lFsOQDiYAcMsILhKcnN7aHKBLlw1VwRRV5i4GWEcgEX6GFtezeQMBvB4Nq6Ii8tWksNnOd4kjR+iZHDW0Qow18IGxsAhDOb8W3ydNFjzGOZwoHLM8EubhBECV4uuZoE0LssL+5zCgIH3e0DhM9OhJOa4y2Kl281NKGibsHeDy7FpXKpYyEp0HIOpt8hVzOPteqPghArQ9uBHKNfNc4ZHbzjQcAYDBnX1FOuTNZmb9JgbJpdMnZzlw+Z7bnIbLQZ0CAO9g+S6xrvnzTM4udbSS1YcEl5KYNgLBnQAKXTX5K7q1/hk7cIH60tcncUAwmA3sjp3daoH6xlstjuOYxho86nrl7pZ0AMc2DAq7yAGVOh84mcyEK6UDaMODmNAhn9rt9lezWCDcYJTGdAtjlZ3DSsZcIFHxOMdx4CBzIoQ40oGYeJoP2ZpsPMYMBB0uRUUTBmEhQ+P2z3QgQzoFnj5FepuwoCMsB+3daAzGTAMvQ3FRgxojOHRrc+ZDBjAVLDJlsvLDDAXTH3GdtNOZUBvTnVmSGGRAeYC17m10ba9ZEAEFSphg9sz3TMg/QDmLs+ON90vcZ8YkB6C6QYX+wjCQFsAg3E4eJYqgUcawn1hQL8fn7u5xLM3q+JOUmeVm24qWYAIbGXTeaczoMqASt0rF57qA64gtN2bDzifAf2SEDG57lk+gOk6MIOEtc8sfh8Y6N8UIB4WcrlkacsFO5zBsttj2gSMb8Sw+KKhH+VoBlBNDKzu+yYlBstnVE7nPw+GDYMFYE/NAC79nr6hp+BOL7P+t+lh1aVDpo/oBghwWgxoduLqPC+6yEPMKA+ngrBcbdOdMxaV40kZSJKEgP6X/NKqJ6lQUSWIoqJC6yRG9ax8RVQR0QOfl1xhVSEfYIBa1tdvqQp5CQKprAJGlWgx5AjJq6haSZMT0DfoOaISnJyFPle8vvsT28QAnKfjcT+pZCY+QiB26yW+YOtWGtz6eX867lahKqdrdGkKVN3pWpv3sfH4EPVvPfxpBg3T6TdE3aH39hNf/0Mpv0nXPEqtF4ndqu1bMRGKx/8A2Vo8zpYh0flbD1OrIiCHmto60Matj6/G+E/pdFXimzXJRgYd9vx9vI68GbkKUCIUJS/FQlI53onGR4PMKJLI1Bs1H6nDKJONpdUmK/biUpaVwd1YyVz4qjJhED16o9bTSpW8F1LZVqTxRvWHfA33uacDspnTztEFYEA9VIfuJlIzY7e2l47/aBTpJcR4o59pRFqsjQyQJ1RWQz2+Pv6Uke4ZKGLc4wn1+QtWGctQbFIzFpL5wZ/9o1akk+kPWLburw5C7UiiKhEGGbmdTfsIMc9YdBMGIY1BRuUByIY8EZnUmjLg3U1+wDYydDE0aMshtde4C4nAXUW2MoDv2dFAHqNGr54uTxm4q1W3p53J8s0jH3sBaB8H1VCTh4DUk/dkPAN2fHF3MQx1+EgEUgbk+MwglCBPFXZclVldD3o9iejBaHQ0ImXU2WpVbkb81WycrpkH7bG70WskCIMqC21lABLuhshWQdPvC3n4CQO512M97ZDOYHzPAAFe1Bh0BqEhKzc9mWHn0E2+cDTkcY/dRKezGbdPllsXmQmDJmFAqv5JoptGuC8+EgathBryawyqd+y4nQj5QNUN7GXgSZfVTA+xsuz+xN/bA/GNxxMnDFhJHgP1owgZJVSN+Fp9lraF+iAtNd3Nfubc+/6IMqiJMdldzsRUUiXaFnQGcTWitQVeWyFff9NHbBPJ47FM948geiBl3O27jAiIGtrLgNSoceTxhU797ouIxgDF4tQm+tKNKNuLvD8ShzXCAPUyXk/NW5XVUVzN1qQ6e+FNt5Q/NT1Il31HrJqpSjGdQVz1v/E1WE+9DgkD7bTEHgwB21PffPKPZU0P5EiCbZTTRAFjkdaRnQzO36Tj74HnVon0akqiRswVGtWkcs3Px+IZcpG8mXRaW8YokgcxNIin022UvVWhLKNEOn0Rotsd3Jb5j7fKeTots2Kc9I019e7Wl4iztVuYve1MGNQ8MN7s/6FG3teINwBOj5C39olvhTJHUdRL28iAUUVfFMCoT/J5RcUrSvT8IiOJKoOyp8TlgVJdd26BSpcyg2hdBORtcvF9xMmrK33i9UmiBFVRAWKdeEmiD5BioqLk9Z2XtZImm4iRIkWf6iOfpGdhoiIEoheC4akEoU+c/1ZP7CvrvjC5TAjee8e6V9uPT9arzR4Ip84w1H+mn9D+a+kokJn8hbdlMHWnp5+ZfGpSLH3eGSPGXl8ZAKQJULwAAe0/fab9VrzaI/pv8srDY/3n4cGM0KP0g70KmjzSXtd+02rPDR3VqNGFeUIGKBh4AgmH9T11sStwGcxfFa8rNyfdbip1nMzlcgWj/JSnZWDxbqWPEk7gBEFwBYJX15Vu6phWF+rqAHVhlluBHQx2Unm6CxIXCBZJzXMFBmwebdxjBmF6Uw4cyF/T+5pCWvVHhln3lAGdYQjkz7rJAr3unxli3j8GVPMviyfHBdrY9+6etp/PgFx919XNsTa7so3a7xsDzOHAdTe33ervEQMscIHrVGlbN3TePwaYCxe7pW01/j1kwHHBShLu5vo7ngFxeTkO57uF7bf/vWFAeoBiikHbnrXcGwZh0gdQADttAY5mEObwVYrhn0IDHMmAphgFiQ14Ig1wIgMsuCqlJ9QA5zHAwpXVG9N9mQzCQqBSsH5jum2KIxjQSIDlexNuXxzBQMDXuc9PM3y0OIABF7hZyht6UrGdgXC5fmn/jsVWBuGwkD8m7rCdSsDYy4D0hckn6wn0Kan7WSza+ADUX7CPAeaKT2gIlX5nqJQ7HW2LfujtdESgdqIDj8cLbWNACJSesiuAYm0IlDcJpF171HMjBnkAqP0L2aYHVAee1AxAX7rPM2wDqP16HaLWmFihIYQZLV3RBgZYeFod0BlkEkOPu8Gf+mFtwFMGYAgIAzv0IOzirmxwiIge1HlI9EAZ9jNZvlVFlAET0jbq9h7thAHbMWEg5G1xCaGvVqf2IPLnJ6mWRe20ApUhsQeaHvh2oQevDuXE8ioDwoALHtvjFCvD9rkyOPWrnlG24YFMJ9HvMzDbbtOM0L778LutM3jxVpaXq4o+BLq2OcV0REa7BC03Q3tKk1S0cRqKyQevts/gx0P38i02QfdJw0NWBUaPxm+3j+DFq5eye/mOQU4kQG/3Ix/soCm8ePHtgTyO2jwWsiRAGbnlt7tA8OLFD0QTOgpwvAyqsjzegTXQIRzIbvfozu9oSYyP3Iff7woBaQ7yoUwwOFtk+eCHnRHQKLw9fOlsOfz+x90pwVReOVt2Xv9neZZneZYvXv4fzoIw7svGfHEAAAAASUVORK5CYII=" alt="" srcset=""></a>
+             <ul id="nav">
+                 <li><a href="">KHOA</a>
+                     <ul class="subnav">
+                         <li><a href="cokhi.html">KHOA CƠ KHÍ</a></li>
+                         <li><a href="">KHOA CÔNG NGHỆ Ô TÔ</a></li>
+                         <li><a href="">KHOA NGOẠI NGỮ</a></li>
+                         <li><a href="">KHOA ĐIỆN TỬ</a></li>
+                         <li><a href="cntt.html">KHOA CÔNG NGHỆ THÔNG TIN</a></li>
+                         <li><a href="ktkt.html">KHOA KẾ TOÁN-KIỂM TOÁN</a></li>
+                     </ul>
+                 </li>
+                 <li><a href="">THU CŨ</a></li>
+                 <li><a href="">GIỚI THIỆU</a></li>
+                 <li><a href="">LIÊN HỆ</a></li>
+                 <li><a href="">CHÍNH SÁCH</a></li>
+            </ul>
+            <div id="icon-search"><i class="fa-solid fa-magnifying-glass"></i><input  type="text" placeholder="Search....."></div>
+            <span id="cart"><a href="gioHang.html"><i class="fa-solid fa-cart-shopping"></i></a></span>
+            <span id="login"><i class="fa-solid fa-user"></i> Đăng nhập</span>
+         </div>
+         <div id="newVoucher">
+             Bạn đã được miễn phí vận chuyển
+         </div>
+         <div id="nen">
+             <div id="popup">
+                 <span id="icon"><i class="fa-solid fa-circle-xmark"></i></span>
+                 <form action="" id="form1" class="active">
+                     <h4>Đăng nhập</h4>
+                     <div id="tk"><input type="text" placeholder="Tên tài khoản"  id="tk-value"></div>
+                     <div id="mk"><input type="password" placeholder="Mật khẩu" id="mk-value"></div>
+                     <div id="form-login"><button type="button">Đăng Nhập Ngay</button></div>
+                     <div id="sign-up"><button type="button">Tạo Tài Khoản</button></div>
+                 </form>
+                 <form action="" id="form2">
+                     <h4>Đăng kí tài khoản</h4>
+                     <div id="dktk"><input type="text" placeholder="Tên tài khoản" id="dktk-value"></div>
+                     <div id="dkmk"><input type="password" placeholder="Mật khẩu" id="dkmk-value"></div>
+                     <div id="nhapLaiMK"><input type="password" placeholder="Nhập lại mật khẩu" id="nhapLaiMK-value"></div>
+                     <div id="DangKi"><button type="button">Đăng Kí Ngay</button></div>
+                 </form>
+             </div>
+         </div>
+         <script>
+             let check=true;
+             let login=document.querySelector("#login");
+             let sign=document.querySelector("#sign-up");
+             let form1=document.querySelector("#form1");
+             let form2=document.querySelector("#form2");
+             let close=document.querySelector("#icon");
+             let nen=document.querySelector("#nen");
+             login.onclick=function(){
+                 nen.classList.add('active')
+             }
+             close.onclick=function(){
+                 nen.classList.remove('active')
+                 if(!check){
+                     form1.classList.add('active')
+                     form2.classList.remove('active')
+                     check=true
+                 }
+             }
+             sign.onclick = function(){
+                 form1.classList.remove('active')
+                 form2.classList.add('active')
+                 check=false
+             }
+         </script>
+         <div class="tieuDe_sanPham">Sản phẩm liên quan : </div>
+         <div id="mat_hang"></div>
+         <div id="cuaSo_muahang">
+            <div id="hienThi">
+            </div>
+        </div>
+        <div id="footer">
+            <footer class="footer-field">
+                <div class="container">
+                    
+                        <div class="col3">
+                            <div class="col1 hidden-sm">
+                                <div class="footer-about">
+                                    <a href="#">
+                                        <img class="foooter-logo" src="https://lic.haui.edu.vn/dnn/web/haui/assets/images/logo.png" alt="">
+                                    </a>
+                
+                                </div>
+                            </div>
+                            <h4 class="footer-heading">Bản đồ chỉ dẫn</h4>
+                            <p style="margin-top: -20px;">Trường Đại học Công nghiệp Hà Nội</p>
+                            <div class="mailbox">
+                                <div class="footer-contact">
+                                    <iframe width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=%C4%91%E1%BA%A1i%20h%E1%BB%8Dc%20c%C3%B4ng%20nghi%E1%BB%87p%20h%C3%A0%20n%E1%BB%99i&amp;key=AIzaSyCTBPYg-pwFoF2jkiXML5TtyXZTJ8UTlkU" allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col4">
+                            <div class="footer-contact">
+                                <h4 class="footer-heading">Trụ sở chính</h4>
+                                <div class="mailbox">
+                                    <p>
+                                        <i class=""></i>Nhà A11 - Khu A, Phường Minh Khai, Quận Bắc Từ Liêm, Hà Nội
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <div class="footer-contact">
+                                <h4 class="footer-heading">Các cơ sở khác</h4>
+                                <div class="mailbox">
+                                    <p>
+                                        <i class=""></i>Cơ sở 2: Tầng 1,2 Nhà B8 - Khu B, Phường Tây Tựu, Quận Bắc Từ Liêm, Hà Nội
+                                    </p>
+                                    <p>
+                                        <i class=" "></i>Cơ sở 3: Tầng 3 Nhà C18 - Khu C, Phường Lê Hồng Phong, Thành phố Phủ Lý, tỉnh Hà Nam
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col4">
+                            <div class="footer-contact">
+                                <h4 class="footer-heading">Liên kết site</h4>
+                                <div class="footer-link">
+                                    <ul class="address">
+                                        <li>
+                                            <a href="//www.haui.edu.vn" title="Trường Đại học Công nghiệp Hà Nội">Trường Đại học Công nghiệp Hà Nội</a>
+                                        </li>
+                                        <li>
+                                            <a href="//tuyensinh.haui.edu.vn" title="Cổng thông tin tuyển sinh">Thông tin tuyển sinh</a>
+                                        </li>
+                                        <li>
+                                            <a href="//egov.haui.edu.vn" title="Hành chính điện tử">Hành chính điện tử</a>
+                                        </li>
+                                        <li>
+                                            <a href="//lms.haui.edu.vn" title="Đào tạo trực tuyến">Đào tạo trực tuyến</a>
+                                        </li>
+                                         <li>
+                                            <a href="//dttc.haui.edu.vn" title="Cổng thông tin đào tạo">Cổng thông tin đào tạo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </footer>
+            <section class="copyright-field">
+                <p>
+                    Copyright © 2018 Hanoi University of Industry.
+                </p>
+            </section>
+        </div>
+    </div>
+    <script src="cokhi.js"></script>
+</body>
+</html>

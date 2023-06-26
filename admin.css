@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 100px;
+    box-shadow: 0 8px 12px -10px rgba(0,0,0,0.95); 
+    background-color: white;
+    position: relative;
+}
+header img{
+    height: 100px;
+}
+header #tieu_de{
+    position: absolute;
+    top: 0;
+    left: 160px;
+    padding: 10px 0 10px 20px ;
+    border-left :1.5px #EE4D2D solid;
+    color: #EE4D2D;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);  
+}
+.active{
+    display: block !important;
+}
+.nen{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    display: none;
+    z-index: 10;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 150px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+}
+.form_value p{
+    text-align: center;
+    padding:5px 0 5px 0 ;
+}
+.form_value input{
+    width: 150px;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+button{
+    width: 80px;
+    height: 30px;
+    margin-top:10px ;
+    color: white;
+    background-color: #EE4D2D;
+    border: none;
+    border-radius:5px ;
+    cursor: pointer;
+}
+#donHang{
+    width: 100%;
+    margin-top:50px ;
+}
+#donHang table{
+    width: 90%;
+    margin-left:5%;
+    border-collapse: collapse;
+}
+
+#khung td:nth-child(1){
+    width: 60px;
+    text-align: center;
+}
+#khung td:nth-child(2){
+    width: 250px;
+    text-align: center;
+}
+#khung td:nth-child(3){
+    width: 200px;
+    text-align: center;
+}
+#khung td:nth-child(4){
+    width: 320px;
+    text-align: center;
+}
+#khung td:nth-child(5){
+    width: 150px;
+    text-align: center;
+}
+#khung td:nth-child(6){
+    width: 100px;
+    text-align: center;
+}
+#khung td:nth-child(7){
+    text-align: center;
+}
+#khung td:nth-child(8){
+    text-align: center;
+}
+#khung td:nth-child(9){
+    text-align: center;
+}
+.thanhPhan{
+    height: 50px;
+}
+.thanhPhan td{
+    text-align: center;
+}
+.xoa{
+    background-color: white;
+    color: rgba(0,0,0,0.65);
+    border: none;
+    cursor: pointer;
+}
+.xoa:hover{
+    color:#EE4D2D ;
+}
+.moRong{
+    background-color: white;
+    color: rgba(0,0,0,0.65);
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+.moRong:hover{
+    color:rgb(38, 38, 198) ;
+}
+#cuaSoDanhSach{
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+#danhSach{
+    display: flex;
+    width: 800px;
+    background-color: #F5F5F5;
+    max-height:600px;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    margin: auto;
+    border-radius: 10px;
+    animation: hienThi 0.25s ease 1 forwards;
+}
+@keyframes hienThi{
+    from{
+        transform: translateY(-800px);
+    }
+    to{
+        transform: translateY(100px);
+    }
+}
+.active{
+    display: block !important;
+}
+#danhSach::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+#danhSach::-webkit-scrollbar-thumb {
+    background-color: #EE4D2D;
+    border-radius: 10px;
+}
+#danhSach::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+.mat_hang{
+    margin-left: 10%;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    transition: all 0.25px linear;
+}
+.mat_hang img{
+    height: 100px;
+}
+.ten_sp{
+    font-size: 20px;
+    font-weight: 500;
+    flex: 2;
+    padding-left: 20px;
+}
+.gia_sp{
+    font-weight: 700;
+    flex :1;
+}
+.soLuong{
+    font-weight: 600;
+    flex: 1;
+}

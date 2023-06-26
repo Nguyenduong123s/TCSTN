@@ -1,0 +1,437 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    position: relative;
+}
+#header{
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 8px 12px -10px rgba(0,0,0,0.75);
+}
+.subnav li{
+    background-color: white;
+}
+#header a img {
+    height: 80px;
+}
+#header #nav > li{
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 16px 0 16px;
+    transition: all 0.5 linear;
+}
+#nav{
+    position: absolute;
+    top: 0;
+    left: 150px;
+    
+}
+#nav li  a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+#header #icon-search{
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 300px;
+
+}
+#header #icon-search input{
+    height: 40px;
+    width: 100%;
+    border-radius: 15px;
+    padding-left:40px ;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    position: absolute;
+}
+#header #icon-search i{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left:15px ;
+}
+#cart{
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    transform: translateY(-50%);
+    opacity: 0.6;
+    transition: all 0.5 ease-in-out;
+}
+#cart a i{
+    font-size: 30px;
+    color: black;
+}
+#login a{
+    text-decoration: none;
+    color: black;
+}
+#login{
+    opacity: 0.6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+}
+#nav > li:hover > a{
+    opacity: 1;
+}
+#cart:hover{
+    opacity: 1;
+}
+#login:hover{
+    opacity: 1;
+}
+.subnav{
+    position: absolute;
+    box-shadow:-1px 18px 20px 0px grey;
+    transition: all 1s linear;
+    z-index: 3;
+    display: none;
+}
+.subnav li{
+    display: block ;
+    line-height: 50px;
+    padding-left:20px;
+    padding-right:20px;
+
+}
+.subnav li:hover a{
+    opacity: 1 !important;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#newVoucher{
+    width: 100%;
+    height: 40px;
+    background-color:#63B1BC;
+    margin-top: 80px    ;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+} 
+#popup{
+    background-color: #fff;
+    width: 620px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 17px;
+}
+#form1{
+    width: 420px;
+    height: 320px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+#form-login > button,#sign-up > button,
+#DangKi > button
+{
+    height: 40px;
+    width: 100%;
+}
+#tk ,#mk,#dktk,#dkmk,#nhapLaiMK{
+    margin-top: 25px;
+    width: 100%;
+    height: 45px;
+    position: relative;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+#tk-value,#mk-value,#dktk-value,#dkmk-value,#nhapLaiMK-value
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding-left:5px;
+    width: 95%;
+    border: none;
+    outline: none;
+}
+#form-login button,#DangKi button{
+    background-color: #D33831;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+#sign-up button{
+    background-color: white;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+}
+#form1 h4,#form2 h4{ 
+    text-align: center;
+}
+#nen{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1000000;
+}
+#icon{
+    float: right;
+    padding: 10px;
+    font-size: 22px;
+}
+.active{
+    display: block !important;
+}
+#form-login,#sign-up,#nhapLaiMK,#DangKi{
+    margin-top:25px ;
+}
+#tk:hover,#mk:hover,
+#form-login:hover,#sign-up:hover{
+    box-shadow:  0px 1px 5px red    ;
+}
+#mat_hang{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+#form2{
+    width: 420px;
+    height: 320px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+.tieuDe_sanPham{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0px 20px 10px;
+}
+.matHang{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+.matHang img{
+    width: 90%;
+    flex-grow: 1;
+}
+.matHang p{
+    padding:20px 0 0 20px;
+}
+#themVaoGioHang{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    display: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.matHang:hover #themVaoGioHang{
+    display: block;
+}
+#click_mua:hover,.matHang:hover{
+    z-index: 12;
+    animation: Duong 0.25s linear 1 forwards;
+}
+@keyframes Duong {
+    to{
+        transform: scale(1.015);
+    }
+}
+.tieuDe_sanPham{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0px 20px 10px;
+}
+#cuaSo_muahang{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: none;
+}
+#hienThi{
+    width: 830px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:10px ;
+    display: flex;
+
+}
+#hienThi img{
+    height: 100%;
+}
+#thongTin_SP{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#tenSP{
+    padding-top: 45px;
+    font-size: 23px;
+}
+#soLuongSP{
+    border:1px black solid;
+    width: 50px;
+    height: 30px;
+}
+#click_mua{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+.dongCuaSo{
+    height: 40px;
+   padding: 10px;
+   font-size: 20px;
+   opacity: 0.7;
+   cursor: pointer;
+}
+.dongCuaSo:hover{
+    opacity: 1;
+}
+.footer-field{
+    display: block;
+    padding: 30px 0 0;
+    background: url(footer.png)  #0d4e96 no-repeat center;
+    position: relative;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col1 hiddem-sm{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: none;
+}
+.footer-about{
+    margin-bottom: 30px;
+}
+.footer-logo{
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    width: 60px;
+}
+.col3{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+.footer-heading{
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.5;
+    margin-top: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.mailbox{
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+    line-height: 26px;
+    box-sizing: border-box;
+}
+.footer-contact{
+    margin-bottom: 30px;
+}
+.col4{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    width: 300;
+}
+
+.footer-link{
+    margin-bottom: 30px;
+}
+.address{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.address a{
+    text-decoration: none;
+    color: white;
+}
+.copyright-field{
+    display: block;
+    background: #083970;
+    text-align: center;
+    padding: 2px 0;
+    margin: 0;
+}
+#footer{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color:  #333;
+    font-size: 14px;
+    line-height: 26px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    margin-top:50px;
+}

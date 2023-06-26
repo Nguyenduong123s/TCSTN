@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <header>
+            <img src="https://cpr.haui.edu.vn/media/73/t73819.jpg" alt="">
+            <div id="tieu_de">Đơn Hàng</div>
+        </header>
+        <div id="donHang">
+            <table border="2" id="bang">
+                <tr id="khung">
+                    <td>STT</td>
+                    <td>Họ và tên</td>
+                    <td>Số điện thoại</td>
+                    <td>Địa chỉ</td>
+                    <td>Giá trị</td>
+                    <td>Số lượng</td>
+                    <td>Danh sách</td>
+                    <td>Thời Gian</td>
+                    <td>Xóa</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="nen active" >
+        <form action="">
+            <div class="form_value">
+                <p>Tài khoản :</p>
+                <input type="text" id="tk">
+            </div>
+            <div class="form_value">
+                <p>Mật khẩu :</p>
+                <input type="password" id="mk">
+            </div>
+            <button type="button" id="login">Đăng nhập</button>
+        </form>
+    </div>
+    <div id="cuaSoDanhSach">
+        <div id="danhSach">
+        </div>  
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
